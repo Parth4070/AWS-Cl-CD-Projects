@@ -23,7 +23,7 @@ class DataIngestion:
             df = pd.read_csv(r"notebook\data\stud.csv")
             logging.info("Read the dataset as a dataframe")
 
-            # FIX HERE
+           
             os.makedirs(os.path.dirname(self.ingestion_config.train_data_path), exist_ok=True)
 
             df.to_csv(self.ingestion_config.raw_data_path, index=False, header=True)
@@ -44,4 +44,4 @@ class DataIngestion:
 
 if __name__ == "__main__":
     obj = DataIngestion()
-    obj.initiate_data_ingestion()   # FIX HERE
+    obj.initiate_data_ingestion()   
