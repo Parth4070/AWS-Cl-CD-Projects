@@ -9,7 +9,7 @@ on:
 
 env:
   AWS_REGION: ap-south-1                  # CHANGE THIS
-  ECR_REPOSITORY: my-app           # CHANGE THIS
+  ECR_REPOSITORY: studentperformance          # CHANGE THIS
 
 permissions:
   id-token: write
